@@ -1,43 +1,43 @@
 ![Coders-Lab-1920px-no-background](https://user-images.githubusercontent.com/30623667/104709394-2cabee80-571f-11eb-9518-ea6a794e558e.png)
 
-# Important information
+# Důležité informace
 
-Read the following guidelines before doing the exercises.
+Před zahájením cvičení si přečtěte následující pokyny.
 
-## How do you begin?
+## Jak začít?
 
-1. [*Fork*](https://guides.github.com/activities/forking/) the repository containing exercises.
-2. Clone the repository onto your computer using the command: `git clone repository_address`.
-   You will find the address of the repository by pressing "Clone or download" button on its webpage.
-3. Complete the exercises and commit changes to your repository using the commands below.
-   `git add filename` will add a single file which you have changed.
-   If you want to add all the changed files at once, use `git add .`.
-   Remember that the fullstop (dot) at the end of this command is important!
-   Next, commit changes using `git commit -m "description_of_changes"`.
-4. Push changes to your repository on GitHub by typing: `git push origin main`.
-5. Create a [*pull request*](https://help.github.com/articles/creating-a-pull-request) to the original repository when you have finished all the exercises.
+1. Vytvořte [*fork*](https://guides.github.com/activities/forking/) repozitáře se cvičeními.
+2. Naklonujte repozitář do svého počítače příkazem: `git clone repository_address`.
+   Adresu repozitáře najdete po kliknutí na tlačítko "Clone or download" na jeho webové stránce.
+3. Vypracujte cvičení a změny do svého repozitáře commitněte pomocí níže uvedených příkazů.
+   `git add filename` přidá jeden soubor, který jste změnili.
+   Chcete-li přidat všechny změněné soubory najednou, použijte `git add .`.
+   Pamatujte, že tečka na konci tohoto příkazu je důležitá!
+   Poté změny commitněte příkazem `git commit -m "description_of_changes"`.
+4. Změny odešlete do svého repozitáře na GitHubu příkazem: `git push origin main`.
+5. Po dokončení všech cvičení vytvořte [*pull request*](https://help.github.com/articles/creating-a-pull-request) do původního repozitáře.
 
-### Do the exercises in appropriate files.
+### Cvičení vypracovávejte v příslušných souborech.
 
-**The repository with the exercises will be removed 2 weeks after the end of the course. This will result in the removal of all forks made from this repository.**
+**Repozitář se cvičeními bude odstraněn 2 týdny po skončení kurzu. To povede k odstranění všech forků vytvořených z tohoto repozitáře.**
 
 
 ## Task 1 - ES6
 
-**Do not use the React library** when performing this task.
+Při plnění tohoto úkolu **nepoužívejte knihovnu React**.
 
-> ### Preparation
+> ### Příprava
 >
-> Modify the `vite.config.js` file so that the `root` variable points to:
+> Upravte soubor `vite.config.js` tak, aby variable `root` ukazovala na:
 >
 > - `01_Task_1`
 
 
-Create a function `without` taking an infinite number of arguments (use an appropriate operator). The first of the argument (`data`) will be an array of integers. There may be infinitely many arguments following it.
+Vytvořte function `without`, která přijímá neomezený počet arguments (použijte vhodný operator). První argument (`data`) bude array celých čísel. Po něm může následovat neomezený počet dalších arguments.
 
-The function should return a **new array** with values passed as the following arguments removed. Use appropriate **array functions** to solve the task.
+Function má vrátit **nový array**, z nějž budou odstraněny values předané v dalších arguments. K vyřešení úkolu použijte vhodné **array functions**.
 
-### Example
+### Příklad
 
 ```js
 const data = [1, 2, 3, 4, 5];
@@ -52,32 +52,32 @@ console.log(without(data, 1, 2, 3, 4, 5)); // [];
 
 ## Task 2 - ES6
 
-**Do not use the React library** when performing this task.
+Při plnění tohoto úkolu **nepoužívejte knihovnu React**.
 
-> ### Preparation
+> ### Příprava
 >
-> Modify the `vite.config.js` file so that the `root` variable points to:
+> Upravte soubor `vite.config.js` tak, aby variable `root` ukazovala na:
 >
 > - `02_Task_2`
 
 
-In the file prepared for this task you'll find an array of users (`users` variable)
+V souboru připraveném pro tento úkol najdete array uživatelů (variable `users`).
 
-> For all actions involving the array of data use the **array methods**.
+> Pro všechny operace nad data array použijte **array methods**.
 
-Create a function called `parseUserData` taking an **array** as an argument (with a `data` variable) and then:
+Vytvořte function `parseUserData`, která jako argument přijímá **array** (ve variable `data`), a následně:
 
-- filter the resulting array and only leave such users who in the `language` key have the value of `French`,
-- using an appropriate array method change the structure of individual objects so that they represent the following data (use destructuring):
+- vyfiltrujte výsledný array tak, aby v něm zůstali pouze uživatelé, kteří mají v key `language` value `French`,
+- pomocí vhodné array method změňte strukturu jednotlivých objects tak, aby obsahovaly následující data (použijte destructuring):
   - `id`,
-  - `fullName`: `firstName` `lastName` (the name and surname should be separated by a space character),
+  - `fullName`: `firstName` `lastName` (jméno a příjmení musí být oddělené mezerou),
   - `email`,
   - `nin`,
-- sort in on the `nin` key (ascending).
+- seřaďte je podle key `nin` vzestupně.
 
-The function has to return a fully prepared array according to the specification below:
+Function musí vrátit kompletně připravený array podle níže uvedené specifikace:
 
-### Expected result:
+### Očekávaný výsledek:
 
 ```js
 [
@@ -104,39 +104,39 @@ The function has to return a fully prepared array according to the specification
 
 
 ## Task 3 - ES6
-**Do not use the React library** when performing this task.
+Při plnění tohoto úkolu **nepoužívejte knihovnu React**.
 
 
-> ### Preparation
-> Modify the `vite.config.js` file so that the `root` variable points to:
+> ### Příprava
+> Upravte soubor `vite.config.js` tak, aby variable `root` ukazovala na:
 > - `03_Task_3`
 
 
 
 
-Create an abstract class named `Product` with a constructor that takes the following parameters:
+Vytvořte abstract class `Product` s constructorem, který přijímá následující parameters:
 
-- `name` - product name
-- `price` - product price
-- `inStock` - value `true`/`false` stating if product is in stock
-- `quantity` - quantity in stock
+- `name` - název produktu
+- `price` - cena produktu
+- `inStock` - value `true`/`false`, která určuje, zda je produkt skladem
+- `quantity` - množství skladem
 
-It should also include the following methods:
+Měla by také obsahovat následující methods:
 
-- `isInStock()` - returning the text 'Product available' or 'Out of stock' depending on the relevant key in the object
-- `order(quantity)` - the method should return information on the total purchase price of a given `quantity` of products. If the value of `quantity` exceeds the quantity in stock, the method should return `false`. It must also modify the value of `this.quantity` accordingly and if it reaches `0`, the method must also set `this.inStock` to `false`.
+- `isInStock()` - vrací text 'Product available' nebo 'Out of stock' podle příslušného key v objectu
+- `order(quantity)` - method má vrátit informaci o celkové ceně nákupu zadaného `quantity` produktů. Pokud value `quantity` překročí množství skladem, method musí vrátit `false`. Musí také odpovídajícím způsobem upravit value `this.quantity`, a pokud dosáhne `0`, musí zároveň nastavit `this.inStock` na `false`.
 
-Then create a class named `Shoes` which will inherit from `Product`. It should **additionally** create in the constructor:
+Poté vytvořte class `Shoes`, která bude dědit z `Product`. V constructoru má **navíc** vytvořit:
 
-- `colors` - shoe color array (empty at the beginning)
-- `sizes` - shoe size array (at the beginning: `35`, `36`, `37`, `38`, `39`, `40`, `41`, `42`, `43`, `44`)
+- `colors` - array barev bot (na začátku prázdný)
+- `sizes` - array velikostí bot (na začátku: `35`, `36`, `37`, `38`, `39`, `40`, `41`, `42`, `43`, `44`)
 
-The `Shoes` class should also have two additional methods:
+Class `Shoes` má mít také dvě další methods:
 
-- `addColor(color)` - adds the appropriate color to the `this.colors` array (use a spread operator)
-- `removeSize(size)` - removes the given size from the `this.sizes` array (use the iterative method `filter`)
+- `addColor(color)` - přidá zadanou barvu do array `this.colors` (použijte spread operator)
+- `removeSize(size)` - odstraní zadanou velikost z array `this.sizes` (použijte iterativní method `filter`)
 
-Test the operation of the classes by executing the following or your own imaginary code.
+Otestujte fungování classes spuštěním následujícího nebo vlastního ukázkového code.
 
 ```js
 const adidas = new Shoes("Adidas", 299.99, true, 40);
@@ -160,38 +160,38 @@ console.log(adidas.sizes); // [35, 36, 37, 39, 41, 42, 44]
 
 
 ## Task 4 - React
-Do the task **using the React library**.
+Úkol vypracujte **pomocí knihovny React**.
 
-> ### Preparation
-> Modify the `vite.config.js` file so that the `root` variable points to:
+> ### Příprava
+> Upravte soubor `vite.config.js` tak, aby variable `root` ukazovala na:
 > - `04_Task_4`
 
 
-Render the following elements in a **function** component named ```App```:
-- `h1` with the text "Hello World!",
-- `span` with the text "React Rules!".
+Ve **function component** pojmenované ```App``` vyrenderujte následující elements:
+- `h1` s textem "Hello World!",
+- `span` s textem "React Rules!".
 
-The elements should be **direct** children of the main element in which we render the whole application - `#app`.
+Elements musí být **direct** children hlavního elementu, do kterého renderujeme celou aplikaci — `#app`.
 
 
 ## Task 5 - React
-Do the task **using the React library**.
+Úkol vypracujte **pomocí knihovny React**.
 
-> ### Preparation
-> Modify the `vite.config.js` file so that the `root` variable points to:
+> ### Příprava
+> Upravte soubor `vite.config.js` tak, aby variable `root` ukazovala na:
 > - `05_Task_5`
 
 
 
-Create a **function component** named `UserDetails`. It should accept through `props`:
+Vytvořte **function component** s názvem `UserDetails`. Prostřednictvím `props` má přijímat:
 
-- Name `name`
-- Surname `surname`
-- Address ``address``
-- Postal Code `postcode`
-- City `city`
+- jméno `name`
+- příjmení `surname`
+- adresu `address`
+- PSČ `postcode`
+- město `city`
 
-The component should render (example in `HTML`):
+Component má vyrenderovat (příklad v `HTML`):
 
 ```html
 <div class="card">
@@ -203,31 +203,31 @@ The component should render (example in `HTML`):
 </div>
 ```
 
-Render this component with any chosen data.
+Vyrenderujte tento component s libovolně zvolenými daty.
 
-**Remember to also create a function component `App` which will render the component for this task.**
+**Nezapomeňte také vytvořit function component `App`, který vyrenderuje component pro tento úkol.**
 
 
 ## Task 6 - React
-Do the task **using the React library**.
+Úkol vypracujte **pomocí knihovny React**.
 
-> ### Preparation
-> Modify the `vite.config.js` file so that the `root` variable points to:
+> ### Příprava
+> Upravte soubor `vite.config.js` tak, aby variable `root` ukazovala na:
 > - `06_Task_6`
 
 
 
-Import the array of objects located in `js/data/products.js` under the variable `products`.
+Naimportujte array objects umístěný v `js/data/products.js` do variable `products`.
 
-Create three components: `App`, `Products`, `Item`.
+Vytvořte tři components: `App`, `Products`, `Item`.
 
-Component `App` should pass the imported product list to the `Products` Component through `props` (`props` should be named `products`).
+Component `App` má předat naimportovaný seznam produktů component `Products` prostřednictvím `props` (`props` se má jmenovat `products`).
 
-The `Product` component should render `h2` heading with the string "Products", and a `ul` list with its `Item` components. The `Product` component should pass to those `Item` components the values `name` and `price` from each object of the `products` array. This must be done automatically through an iterative method you know.
+Component `Product` má vyrenderovat heading `h2` se stringem "Products" a list `ul` se svými components `Item`. Component `Product` má těmto components `Item` předat values `name` a `price` z každého objectu array `products`. Musí se to provést automaticky pomocí známé iterativní method.
 
-The `Item` component should render a `li` element with data received via `props`, e.g. `{name}, Price: {price}`.
+Component `Item` má vyrenderovat element `li` s daty přijatými přes `props`, například `{name}, Price: {price}`.
 
-In the final result the following construction should appear (in square brackets it is indicated which `props` the component should receive and what type the props should be):
+Ve výsledku se má objevit následující struktura (v hranatých závorkách je uvedeno, jaké `props` má component přijímat a jaký mají mít type):
 
 ```plain
 App
